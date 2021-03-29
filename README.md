@@ -4,7 +4,7 @@
 I build an app to ask questions about me with small introduction about me.
 
 *Author: Alaa Al-Abbas*
-*Links and Resources: *
+*Links and Resources:*
 https://github.com/LTUC/amman-201d20/tree/main/configs
 
 
