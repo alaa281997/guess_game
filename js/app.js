@@ -1,5 +1,5 @@
 'use strict';
-let score = 1;
+let score = 0;
 let userName = prompt('Please enter your name');
 console.log('User enter his/her name');
 
@@ -146,4 +146,4 @@ alert('Welcome to the site  ' + userName + '\n' +
   'Am I from Jordan? ' + thirdQuestion + '\n' +
   'Am I studying Software development?  ' + fourthQuestion + '\n' +
   'Do you think am I know how to write JS code? ' + fifthQuestion + '\n'+
-  'Your Final score is  ' + score );
+  'Your Final score is  ' + score + "out of 7");
