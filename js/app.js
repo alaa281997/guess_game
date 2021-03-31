@@ -156,11 +156,11 @@ sixQus();
 let seventh=null;
 function sevQus() {
   
-let car = ['Ferrari' ,'Ford' ,' Bmw' , 'Audi'];
+let car = ['ferrari' ,'ford' ,' bmw' , 'audi'];
  seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
 for(let i=0;i<6;i++){
   seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
-  seventh.toLowerCase();
+  seventh.toUpperCase();
   if(seventh === 'ferrari'||seventh==='bmw'){
       score++;
       alert('Thats Right!!');
