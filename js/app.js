@@ -89,6 +89,8 @@ switch (fourthQuestion.toUpperCase()) {
 }
 fourQus();
 
+function fifthQus() {
+
 let fifthQuestion = prompt('Do you think am I know how to write JS code? (Yes/No or Y/N)');
 switch (fifthQuestion.toUpperCase()) {
   case 'YES':
@@ -105,7 +107,9 @@ switch (fifthQuestion.toUpperCase()) {
   default:
     console.log('please enter Yes or No');
     break;
+} return fifthQuestion;
 }
+fifthQus();
 
 let sixth = prompt('Can guess my height ?');
   if (sixth < 150) {
