@@ -66,6 +66,9 @@ switch (thirdQuestion.toUpperCase()) {
 } return thirdQuestion ;
 }
 thrdQus();
+
+function fourQus() {
+  
 let fourthQuestion = prompt('Am I studying Software development? (Yes/No or Y/N)');
 switch (fourthQuestion.toUpperCase()) {
   case 'YES':
@@ -82,7 +85,9 @@ switch (fourthQuestion.toUpperCase()) {
   default:
     console.log('please enter Yes or No');
     break;
+} return fourthQuestion;
 }
+fourQus();
 
 let fifthQuestion = prompt('Do you think am I know how to write JS code? (Yes/No or Y/N)');
 switch (fifthQuestion.toUpperCase()) {
