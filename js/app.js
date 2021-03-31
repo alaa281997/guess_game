@@ -2,7 +2,8 @@
 let score = 0;
 let userName = prompt('Please enter your name');
 console.log('User enter his/her name');
-
+function firstQus() {
+  
 let firstQuestion = prompt('Am I a doctor? (Yes/No or Y/N)');
 switch (firstQuestion.toUpperCase()) {
   case 'YES':
@@ -19,8 +20,9 @@ switch (firstQuestion.toUpperCase()) {
   default:
     console.log('please enter Yes or No');
     break;
+} return firstQuestion;
 }
-
+firstQus();
 let secondQuestion = prompt('Am I happy? (Yes/No or Y/N)');
 switch (secondQuestion.toUpperCase()) {
   case 'YES':
