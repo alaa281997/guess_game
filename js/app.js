@@ -111,6 +111,8 @@ switch (fifthQuestion.toUpperCase()) {
 }
 fifthQus();
 
+function sixQus() {
+  
 let sixth = prompt('Can guess my height ?');
   if (sixth < 150) {
     console.log("Too short");
@@ -139,6 +141,9 @@ let sixth = prompt('Can guess my height ?');
     console.log("Right");
     score++;
   }
+return sixth;
+}
+sixQus();
 
 let car = ['Ferrari' ,'Ford' ,' Bmw' , 'Audi'];
 let seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
