@@ -8,6 +8,11 @@ I build an app to ask questions about me with small introduction about me.
 https://github.com/LTUC/amman-201d20/tree/main/configs
 
 
+* Navigator : Alaa Abbas
+
+* Driver : Bara'ah Alomari
+
+
 ##### Questions
 - How did this go, overall? Its good over all.
 - What observations or questions do you have about what you’ve learned so far?I have no question everything its going good.
