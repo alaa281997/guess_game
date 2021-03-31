@@ -145,6 +145,8 @@ return sixth;
 }
 sixQus();
 
+function sevQus() {
+  
 let car = ['Ferrari' ,'Ford' ,' Bmw' , 'Audi'];
 let seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
 for(let i=0;i<6;i++){
@@ -160,7 +162,10 @@ for(let i=0;i<6;i++){
   if(i == 5){
       alert('You lost your attempts');
   }
+} return seventh ;
 }
+sevQus();
+
 
 
 alert('Welcome to the site  ' + userName + '\n' +
