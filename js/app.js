@@ -24,7 +24,7 @@ switch (firstQuestion.toUpperCase()) {
 }
 firstQus();
 function scdQus() {
-  
+ 
 let secondQuestion = prompt('Am I happy? (Yes/No or Y/N)');
 switch (secondQuestion.toUpperCase()) {
   case 'YES':
@@ -44,6 +44,9 @@ switch (secondQuestion.toUpperCase()) {
 } return secondQuestion;
 }
 scdQus();
+
+function thrdQus() {
+
 let thirdQuestion = prompt('Am I from Jordan? (Yes/No or Y/N)');
 switch (thirdQuestion.toUpperCase()) {
   case 'YES':
@@ -60,8 +63,9 @@ switch (thirdQuestion.toUpperCase()) {
   default:
     console.log('please enter Yes or No');
     break;
+} return thirdQuestion ;
 }
-
+thrdQus();
 let fourthQuestion = prompt('Am I studying Software development? (Yes/No or Y/N)');
 switch (fourthQuestion.toUpperCase()) {
   case 'YES':
