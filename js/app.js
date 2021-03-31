@@ -2,9 +2,11 @@
 let score = 0;
 let userName = prompt('Please enter your name');
 console.log('User enter his/her name');
+
+let firstQuestion=null;
 function firstQus() {
   
-let firstQuestion = prompt('Am I a doctor? (Yes/No or Y/N)');
+ firstQuestion = prompt('Am I a doctor? (Yes/No or Y/N)');
 switch (firstQuestion.toUpperCase()) {
   case 'YES':
   case 'Y':
@@ -23,9 +25,11 @@ switch (firstQuestion.toUpperCase()) {
 } return firstQuestion;
 }
 firstQus();
+
+let secondQuestion=null;
 function scdQus() {
  
-let secondQuestion = prompt('Am I happy? (Yes/No or Y/N)');
+ secondQuestion = prompt('Am I happy? (Yes/No or Y/N)');
 switch (secondQuestion.toUpperCase()) {
   case 'YES':
   case 'Y':
@@ -45,9 +49,10 @@ switch (secondQuestion.toUpperCase()) {
 }
 scdQus();
 
+let thirdQuestion=null;
 function thrdQus() {
 
-let thirdQuestion = prompt('Am I from Jordan? (Yes/No or Y/N)');
+ thirdQuestion = prompt('Am I from Jordan? (Yes/No or Y/N)');
 switch (thirdQuestion.toUpperCase()) {
   case 'YES':
   case 'Y':
@@ -67,9 +72,10 @@ switch (thirdQuestion.toUpperCase()) {
 }
 thrdQus();
 
+let fourthQuestion=null;
 function fourQus() {
   
-let fourthQuestion = prompt('Am I studying Software development? (Yes/No or Y/N)');
+ fourthQuestion = prompt('Am I studying Software development? (Yes/No or Y/N)');
 switch (fourthQuestion.toUpperCase()) {
   case 'YES':
   case 'Y':
@@ -89,9 +95,10 @@ switch (fourthQuestion.toUpperCase()) {
 }
 fourQus();
 
+let fifthQuestion=null;
 function fifthQus() {
 
-let fifthQuestion = prompt('Do you think am I know how to write JS code? (Yes/No or Y/N)');
+ fifthQuestion = prompt('Do you think am I know how to write JS code? (Yes/No or Y/N)');
 switch (fifthQuestion.toUpperCase()) {
   case 'YES':
   case 'Y':
@@ -111,9 +118,10 @@ switch (fifthQuestion.toUpperCase()) {
 }
 fifthQus();
 
+let sixth=null ;
 function sixQus() {
   
-let sixth = prompt('Can guess my height ?');
+ sixth = prompt('Can guess my height ?');
   if (sixth < 150) {
     console.log("Too short");
     for (let i = 0 ; i <= 3 && sixth < 150 ;i++){
@@ -145,14 +153,15 @@ return sixth;
 }
 sixQus();
 
+let seventh=null;
 function sevQus() {
   
 let car = ['Ferrari' ,'Ford' ,' Bmw' , 'Audi'];
-let seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
+ seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
 for(let i=0;i<6;i++){
   seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
   seventh.toLowerCase();
-  if(seventh === 'Ferrari'||seventh==='Bmw'){
+  if(seventh === 'ferrari'||seventh==='bmw'){
       score++;
       alert('Thats Right!!');
       break;
