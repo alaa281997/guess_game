@@ -145,14 +145,6 @@ function sixQus() {
       }
     }
 
-  } else if (sixth >=150 && sixth <=180) {
-    console.log("Right");
-    score++;
-  }
-return sixth;
-}
-sixQus();
-
 let seventh=null;
 function sevQus() {
   
