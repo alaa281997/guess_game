@@ -20,7 +20,7 @@ switch (firstQuestion.toUpperCase()) {
     break;
 
   default:
-    console.log('please enter Yes or No');
+    alret('please enter Yes or No');
     break;
 } return firstQuestion;
 }
@@ -43,7 +43,7 @@ switch (secondQuestion.toUpperCase()) {
     break;
 
   default:
-    console.log('please enter Yes or No');
+    alert('please enter Yes or No');
     break;
 } return secondQuestion;
 }
@@ -66,7 +66,7 @@ switch (thirdQuestion.toUpperCase()) {
     break;
 
   default:
-    console.log('please enter Yes or No');
+    alert('please enter Yes or No');
     break;
 } return thirdQuestion ;
 }
@@ -89,7 +89,7 @@ switch (fourthQuestion.toUpperCase()) {
     break;
 
   default:
-    console.log('please enter Yes or No');
+    alert('please enter Yes or No');
     break;
 } return fourthQuestion;
 }
@@ -112,22 +112,25 @@ switch (fifthQuestion.toUpperCase()) {
     break;
 
   default:
-    console.log('please enter Yes or No');
+    fifthQuestion = prompt('please enter Yes or No')
+    alert('Ask again');
     break;
 } return fifthQuestion;
 }
 fifthQus();
-
+let j= 4;
 let sixth=null ;
 function sixQus() {
-  
- sixth = prompt('Can guess my height ?');
+sixth = prompt('Can guess my height ?');
   if (sixth < 150) {
     console.log("Too short");
+    alert('Too Short')
     for (let i = 0 ; i <= 3 && sixth < 150 ;i++){
        sixth = prompt('Can guess my height ?');
+       alert("Your attempt = " + (j-i))
        if(sixth < 150){
          console.log('Again');
+         alert('Again')
        }else{
          break;
        }
@@ -136,6 +139,7 @@ function sixQus() {
 
   } else if (sixth > 180) {
     console.log("Too high");
+    alert("Again")
     for (let i = 0 ; i <= 3 && sixth > 180 ;i++){
       sixth = prompt('Can guess my height ?');
       if(sixth > 180){
@@ -144,29 +148,34 @@ function sixQus() {
         break;
       }
     }
+   
+  }else if(sixth === '' || sixth == null) {
+    alert("Not accepted answer")
+  }
+  return sixth;
+}
+sixQus();
+
 
 let seventh=null;
-function sevQus() {
-  
-let car = ['ferrari' ,'ford' ,' bmw' , 'audi'];
- seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
-for(let i=0;i<6;i++){
-  seventh = prompt('Which car I like ? Ferrari ,Ford , Bmw , Audi ');
-  seventh.toUpperCase();
-  if(seventh === 'ferrari'||seventh==='bmw'){
+function sevQus() {  
+ for(let i=0;i<6;i++){
+  seventh = prompt('Which car I like ? ferrari ,ford , bmw , audi ');
+
+  if(seventh === 'ferrari'|| seventh==='bmw'){
       score++;
       alert('Thats Right!!');
-      break;
   }else{
       alert('Wrong try again ');
   }
   if(i == 5){
       alert('You lost your attempts');
-  }
-} return seventh ;
+  } 
+  
+}
+return seventh ;
 }
 sevQus();
-
 
 
 alert('Welcome to the site  ' + userName + '\n' +
@@ -175,4 +184,6 @@ alert('Welcome to the site  ' + userName + '\n' +
   'Am I from Jordan? ' + thirdQuestion + '\n' +
   'Am I studying Software development?  ' + fourthQuestion + '\n' +
   'Do you think am I know how to write JS code? ' + fifthQuestion + '\n'+
-  'Your Final score is  ' + score + "out of 7");
+  'Your Final score is  ' + score );
+
+
